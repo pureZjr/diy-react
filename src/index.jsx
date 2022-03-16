@@ -1,19 +1,16 @@
 import React from '../core/index.js';
-React.default = React;
 
-const a = (
+import Text from './Text.jsx';
+
+const app = (
   <div id="container">
+    <Text text="one text" />
+    <Text text="two text" />
+    <Text text="three text" />
     <span className="hello">hello word</span>
   </div>
 );
 
-const rootDom = document.getElementById('root');
+const rootDom = document.getElementById('app');
 
-function tick() {
-  const time = new Date().toLocaleTimeString();
-  const clockElement = <h1>{time}</h1>;
-  React.render(clockElement, document.getElementById('app'));
-}
-
-tick();
-setInterval(tick, 1000);
+React.render(app, rootDom);

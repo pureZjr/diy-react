@@ -31,3 +31,7 @@
 > updateDomProperties: 更新属性和绑定事件。
 > instantiate: 通过接收*element*参数，生成*instance*
 > reconcileChildren: 循环处理*cileChildren*
+
+### DAY3
+
+#### 本次我们完成了自定义组件和更新组件的功能。
