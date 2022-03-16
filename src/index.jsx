@@ -7,4 +7,13 @@ const a = (
   </div>
 );
 
-React.render(a, document.getElementById('app'));
+const rootDom = document.getElementById('root');
+
+function tick() {
+  const time = new Date().toLocaleTimeString();
+  const clockElement = <h1>{time}</h1>;
+  React.render(clockElement, document.getElementById('app'));
+}
+
+tick();
+setInterval(tick, 1000);
